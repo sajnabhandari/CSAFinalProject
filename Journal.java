@@ -42,7 +42,7 @@ public void run() {
         String dateStr = input.nextLine();
         LocalDate date = LocalDate.parse(dateStr);
         goals.add(new Goal(desc, date));
-        user.addGoals(1);
+        user.addGoal();
         System.out.println("Goal added.");
     }
 

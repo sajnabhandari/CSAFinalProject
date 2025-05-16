@@ -4,8 +4,9 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter your name: ");
         String name = scan.nextLine();
-        User user = new User(name);
+        User user = new User(name, 0);
         Journal goal = new Journal(user);
         goal.run();
+        scan.close(); //resource leak error so
     }
 }
