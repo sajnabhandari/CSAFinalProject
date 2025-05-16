@@ -17,17 +17,21 @@ public void run() {
     int choice = input.nextInt();
     input.nextLine(); // clears newline
     switch (choice) { // switch-case statement!
-        case 1 -> addGoal();
-        case 2 -> viewGoals();
-        case 3 -> markCompleted();
-        case 4 -> addReflection();
-        case 5 -> 
-        {
-    System.out.println("Goodbye!");
-    running = false;
- }
-    default -> System.out.println("Invalid choice.");
-        }
+        case 1:
+         addGoal();
+        case 2 :
+         viewGoals();
+        case 3 :
+         markCompleted();
+        case 4 :
+         addReflection();
+        case 5 :
+         running = false;
+        System.out.println("Goodbye!");
+    
+        default :
+        System.out.println("Invalid choice.");
+     }
     }
 }
 
